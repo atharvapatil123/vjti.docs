@@ -440,6 +440,18 @@ const StudentDashboard = () => {
 							</div>
 
 
+                <div className={`${styles2.inputContainer}`}>
+                  <label className={`${styles2.inputLabel}`}>Doc Id</label>
+                  <select
+                    className={`${styles2.input}`}
+                    onChange={handleDocIdChange}
+                  >
+                    {docIdList.map((id, index) => {
+                      return <option key={index}>{id}</option>;
+                    })}
+                    {/* <option>1</option> */}
+                  </select>
+                </div>
                 
 
                 <div className={`${styles.inputContainer}`}>
